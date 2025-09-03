@@ -3,7 +3,7 @@ import { useState } from "react";
 import "@ibm/plex/css/ibm-plex-sans-kr.css";
 
 const MainContainer = styled.div`
-  background-image: url("/background.png");
+  background-image: url("background.png");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -119,30 +119,30 @@ const String = ({ idx, stringVib, setstringsVib }) => {
       idx={idx}
     >
       <img
-        src={`/string${idx + 1}.png`}
+        src={`string${idx + 1}.png`}
         className={`illusionTop ${stringVib ? "active" : ""}`}
       />
 
       <img
-        src={`/string${idx + 1}.png`}
+        src={`string${idx + 1}.png`}
         id="stable"
         className={`real ${stringVib ? "active" : ""}`}
       />
 
       <img
-        src={`/string${idx + 1}.png`}
+        src={`string${idx + 1}.png`}
         id="stable"
         className={`real ${stringVib ? "active" : ""}`}
       />
 
       <img
-        src={`/string${idx + 1}.png`}
+        src={`string${idx + 1}.png`}
         id="stable"
         className={`real ${stringVib ? "active" : ""}`}
       />
 
       <img
-        src={`/string${idx + 1}.png`}
+        src={`string${idx + 1}.png`}
         className={`illusionBottom ${stringVib ? "active" : ""}`}
       />
     </StringContainer>
@@ -155,7 +155,7 @@ const Main = () => {
     <MainContainer>
       <StringAndPickup>
         <Pickup>
-          <img src="/pickup.png" />
+          <img src="pickup.png" />
         </Pickup>
         <TextContainer
           top="16%"
@@ -202,7 +202,7 @@ const Main = () => {
           right="450px"
           className={`description ${stringsVib[5] ? "active" : ""}`}
         >
-          <div style={{ fontSize: "25px" }}>미필임</div>
+          <div style={{ fontSize: "3vh" }}>미필임</div>
         </TextContainer>
 
         {Array.from({ length: 6 }, (_, idx) => {
