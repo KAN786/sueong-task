@@ -202,7 +202,7 @@ const Main = () => {
           right="450px"
           className={`description ${stringsVib[5] ? "active" : ""}`}
         >
-          미필
+          <div style={{ fontSize: "25px" }}>미필임</div>
         </TextContainer>
 
         {Array.from({ length: 6 }, (_, idx) => {
